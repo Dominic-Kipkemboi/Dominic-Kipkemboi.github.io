@@ -4,28 +4,28 @@ function categories_KETRACO_LINES_3(feature, value, size, resolution, labelText,
                        labelFont, labelFill) {
                 switch(value.toString()) {case '132kV':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(31,214,255,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
+        stroke: new ol.style.Stroke({color: 'rgba(31,214,255,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement)
     })];
                     break;
 case '220kV':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(72,111,229,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
+        stroke: new ol.style.Stroke({color: 'rgba(72,111,229,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement)
     })];
                     break;
 case '400kV':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,76,31,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,76,31,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement)
     })];
                     break;
 case '500HVDC':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(204,82,105,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
+        stroke: new ol.style.Stroke({color: 'rgba(204,82,105,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement)
     })];
