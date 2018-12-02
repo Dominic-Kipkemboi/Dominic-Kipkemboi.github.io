@@ -197,39 +197,61 @@ jsonSource_SGRPHASE1GE2A4Ekmz_17.addFeatures(features_SGRPHASE1GE2A4Ekmz_17);var
                 source:jsonSource_SGRPHASE1GE2A4Ekmz_17, 
                 style: style_SGRPHASE1GE2A4Ekmz_17,
                 title: '<img src="styles/legend/SGRPHASE1GE2A4Ekmz_17.png" /> SGR PHASE 1 ~GE2A4E.kmz'
-            });var format_KETRACO_LINES_18 = new ol.format.GeoJSON();
-var features_KETRACO_LINES_18 = format_KETRACO_LINES_18.readFeatures(json_KETRACO_LINES_18, 
+            });var format_220kvtransmission_MAX_18 = new ol.format.GeoJSON();
+var features_220kvtransmission_MAX_18 = format_220kvtransmission_MAX_18.readFeatures(json_220kvtransmission_MAX_18, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_KETRACO_LINES_18 = new ol.source.Vector({
+var jsonSource_220kvtransmission_MAX_18 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_KETRACO_LINES_18.addFeatures(features_KETRACO_LINES_18);var lyr_KETRACO_LINES_18 = new ol.layer.Vector({
+jsonSource_220kvtransmission_MAX_18.addFeatures(features_220kvtransmission_MAX_18);var lyr_220kvtransmission_MAX_18 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_KETRACO_LINES_18, 
-                style: style_KETRACO_LINES_18,
+                source:jsonSource_220kvtransmission_MAX_18, 
+                style: style_220kvtransmission_MAX_18,
+                title: '<img src="styles/legend/220kvtransmission_MAX_18.png" /> 220kvtransmission_MAX'
+            });var format_132kvtransmission_MAX_19 = new ol.format.GeoJSON();
+var features_132kvtransmission_MAX_19 = format_132kvtransmission_MAX_19.readFeatures(json_132kvtransmission_MAX_19, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_132kvtransmission_MAX_19 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_132kvtransmission_MAX_19.addFeatures(features_132kvtransmission_MAX_19);var lyr_132kvtransmission_MAX_19 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_132kvtransmission_MAX_19, 
+                style: style_132kvtransmission_MAX_19,
+                title: '<img src="styles/legend/132kvtransmission_MAX_19.png" /> 132kvtransmission_MAX'
+            });var format_KETRACO_LINES_20 = new ol.format.GeoJSON();
+var features_KETRACO_LINES_20 = format_KETRACO_LINES_20.readFeatures(json_KETRACO_LINES_20, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_KETRACO_LINES_20 = new ol.source.Vector({
+    attributions: [new ol.Attribution({html: '<a href=""></a>'})],
+});
+jsonSource_KETRACO_LINES_20.addFeatures(features_KETRACO_LINES_20);var lyr_KETRACO_LINES_20 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_KETRACO_LINES_20, 
+                style: style_KETRACO_LINES_20,
     title: 'KETRACO_LINES<br />\
-    <img src="styles/legend/KETRACO_LINES_18_0.png" /> 132kV<br />\
-    <img src="styles/legend/KETRACO_LINES_18_1.png" /> 220kV<br />\
-    <img src="styles/legend/KETRACO_LINES_18_2.png" /> 400kV<br />\
-    <img src="styles/legend/KETRACO_LINES_18_3.png" /> 500HVDC<br />'
-        });var format_KETRACO_SUBSTATIONS_19 = new ol.format.GeoJSON();
-var features_KETRACO_SUBSTATIONS_19 = format_KETRACO_SUBSTATIONS_19.readFeatures(json_KETRACO_SUBSTATIONS_19, 
+    <img src="styles/legend/KETRACO_LINES_20_0.png" /> 132kV<br />\
+    <img src="styles/legend/KETRACO_LINES_20_1.png" /> 220kV<br />\
+    <img src="styles/legend/KETRACO_LINES_20_2.png" /> 400kV<br />\
+    <img src="styles/legend/KETRACO_LINES_20_3.png" /> 500HVDC<br />'
+        });var format_KETRACO_SUBSTATIONS_21 = new ol.format.GeoJSON();
+var features_KETRACO_SUBSTATIONS_21 = format_KETRACO_SUBSTATIONS_21.readFeatures(json_KETRACO_SUBSTATIONS_21, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_KETRACO_SUBSTATIONS_19 = new ol.source.Vector({
+var jsonSource_KETRACO_SUBSTATIONS_21 = new ol.source.Vector({
     attributions: [new ol.Attribution({html: '<a href=""></a>'})],
 });
-jsonSource_KETRACO_SUBSTATIONS_19.addFeatures(features_KETRACO_SUBSTATIONS_19);cluster_KETRACO_SUBSTATIONS_19 = new ol.source.Cluster({
+jsonSource_KETRACO_SUBSTATIONS_21.addFeatures(features_KETRACO_SUBSTATIONS_21);cluster_KETRACO_SUBSTATIONS_21 = new ol.source.Cluster({
   distance: 10,
-  source: jsonSource_KETRACO_SUBSTATIONS_19
-});var lyr_KETRACO_SUBSTATIONS_19 = new ol.layer.Vector({
+  source: jsonSource_KETRACO_SUBSTATIONS_21
+});var lyr_KETRACO_SUBSTATIONS_21 = new ol.layer.Vector({
                 declutter: true,
-                source:cluster_KETRACO_SUBSTATIONS_19, 
-                style: style_KETRACO_SUBSTATIONS_19,
-                title: '<img src="styles/legend/KETRACO_SUBSTATIONS_19.png" /> KETRACO_SUBSTATIONS'
+                source:cluster_KETRACO_SUBSTATIONS_21, 
+                style: style_KETRACO_SUBSTATIONS_21,
+                title: '<img src="styles/legend/KETRACO_SUBSTATIONS_21.png" /> KETRACO_SUBSTATIONS'
             });
 
-lyr_GoogleHybrid_0.setVisible(true);lyr_SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1.setVisible(true);lyr_SGRPHASE1TRANSMISSIONLINESECTION_2.setVisible(true);lyr_SGRPHASE1TemporaryPlaces_3.setVisible(true);lyr_SGRPHASE1PointFeatures_4.setVisible(true);lyr_SGRPHASE1NairobiMombasakmz_5.setVisible(true);lyr_SGRPHASE1HVMETERINGSUBSTATION_6.setVisible(true);lyr_SGRPHASE1COASTLINE_7.setVisible(true);lyr_SGRPHASE1GEF66Akmz_8.setVisible(true);lyr_SGRPHASE1GEDACFkmz_9.setVisible(true);lyr_SGRPHASE1GED3ABkmz_10.setVisible(true);lyr_SGRPHASE1GECA96kmz_11.setVisible(true);lyr_SGRPHASE1GEA99Ekmz_12.setVisible(true);lyr_SGRPHASE1GE8867kmz_13.setVisible(true);lyr_SGRPHASE1GE8309kmz_14.setVisible(true);lyr_SGRPHASE1GE4FABkmz_15.setVisible(true);lyr_SGRPHASE1GE4EB8kmz_16.setVisible(true);lyr_SGRPHASE1GE2A4Ekmz_17.setVisible(true);lyr_KETRACO_LINES_18.setVisible(true);lyr_KETRACO_SUBSTATIONS_19.setVisible(true);
-var layersList = [lyr_GoogleHybrid_0,lyr_SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1,lyr_SGRPHASE1TRANSMISSIONLINESECTION_2,lyr_SGRPHASE1TemporaryPlaces_3,lyr_SGRPHASE1PointFeatures_4,lyr_SGRPHASE1NairobiMombasakmz_5,lyr_SGRPHASE1HVMETERINGSUBSTATION_6,lyr_SGRPHASE1COASTLINE_7,lyr_SGRPHASE1GEF66Akmz_8,lyr_SGRPHASE1GEDACFkmz_9,lyr_SGRPHASE1GED3ABkmz_10,lyr_SGRPHASE1GECA96kmz_11,lyr_SGRPHASE1GEA99Ekmz_12,lyr_SGRPHASE1GE8867kmz_13,lyr_SGRPHASE1GE8309kmz_14,lyr_SGRPHASE1GE4FABkmz_15,lyr_SGRPHASE1GE4EB8kmz_16,lyr_SGRPHASE1GE2A4Ekmz_17,lyr_KETRACO_LINES_18,lyr_KETRACO_SUBSTATIONS_19];
+lyr_GoogleHybrid_0.setVisible(true);lyr_SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1.setVisible(true);lyr_SGRPHASE1TRANSMISSIONLINESECTION_2.setVisible(true);lyr_SGRPHASE1TemporaryPlaces_3.setVisible(true);lyr_SGRPHASE1PointFeatures_4.setVisible(true);lyr_SGRPHASE1NairobiMombasakmz_5.setVisible(true);lyr_SGRPHASE1HVMETERINGSUBSTATION_6.setVisible(true);lyr_SGRPHASE1COASTLINE_7.setVisible(true);lyr_SGRPHASE1GEF66Akmz_8.setVisible(true);lyr_SGRPHASE1GEDACFkmz_9.setVisible(true);lyr_SGRPHASE1GED3ABkmz_10.setVisible(true);lyr_SGRPHASE1GECA96kmz_11.setVisible(true);lyr_SGRPHASE1GEA99Ekmz_12.setVisible(true);lyr_SGRPHASE1GE8867kmz_13.setVisible(true);lyr_SGRPHASE1GE8309kmz_14.setVisible(true);lyr_SGRPHASE1GE4FABkmz_15.setVisible(true);lyr_SGRPHASE1GE4EB8kmz_16.setVisible(true);lyr_SGRPHASE1GE2A4Ekmz_17.setVisible(true);lyr_220kvtransmission_MAX_18.setVisible(true);lyr_132kvtransmission_MAX_19.setVisible(true);lyr_KETRACO_LINES_20.setVisible(true);lyr_KETRACO_SUBSTATIONS_21.setVisible(true);
+var layersList = [lyr_GoogleHybrid_0,lyr_SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1,lyr_SGRPHASE1TRANSMISSIONLINESECTION_2,lyr_SGRPHASE1TemporaryPlaces_3,lyr_SGRPHASE1PointFeatures_4,lyr_SGRPHASE1NairobiMombasakmz_5,lyr_SGRPHASE1HVMETERINGSUBSTATION_6,lyr_SGRPHASE1COASTLINE_7,lyr_SGRPHASE1GEF66Akmz_8,lyr_SGRPHASE1GEDACFkmz_9,lyr_SGRPHASE1GED3ABkmz_10,lyr_SGRPHASE1GECA96kmz_11,lyr_SGRPHASE1GEA99Ekmz_12,lyr_SGRPHASE1GE8867kmz_13,lyr_SGRPHASE1GE8309kmz_14,lyr_SGRPHASE1GE4FABkmz_15,lyr_SGRPHASE1GE4EB8kmz_16,lyr_SGRPHASE1GE2A4Ekmz_17,lyr_220kvtransmission_MAX_18,lyr_132kvtransmission_MAX_19,lyr_KETRACO_LINES_20,lyr_KETRACO_SUBSTATIONS_21];
 lyr_SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'snippet': 'snippet', });
 lyr_SGRPHASE1TRANSMISSIONLINESECTION_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'snippet': 'snippet', });
 lyr_SGRPHASE1TemporaryPlaces_3.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
@@ -247,8 +269,10 @@ lyr_SGRPHASE1GE8309kmz_14.set('fieldAliases', {'Name': 'Name', 'description': 'd
 lyr_SGRPHASE1GE4FABkmz_15.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
 lyr_SGRPHASE1GE4EB8kmz_16.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
 lyr_SGRPHASE1GE2A4Ekmz_17.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_KETRACO_LINES_18.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'LINE_NAME': 'LINE_NAME', 'Length': 'Length', 'STATUS': 'STATUS', 'VOLTAGE_1': 'VOLTAGE_1', 'COMM_DATE': 'COMM_DATE', });
-lyr_KETRACO_SUBSTATIONS_19.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'VOLTAGE': 'VOLTAGE', 'COMM_DATE_': 'COMM_DATE_', 'SUB_NAME': 'SUB_NAME', 'STATUS': 'STATUS', });
+lyr_220kvtransmission_MAX_18.set('fieldAliases', {'ENTITY': 'ENTITY', 'HANDLE': 'HANDLE', 'LAYER': 'LAYER', 'COLOR': 'COLOR', 'LINETYPE': 'LINETYPE', 'ELEVATION': 'ELEVATION', 'THICKNESS': 'THICKNESS', 'TEXT': 'TEXT', });
+lyr_132kvtransmission_MAX_19.set('fieldAliases', {'ENTITY': 'ENTITY', 'HANDLE': 'HANDLE', 'LAYER': 'LAYER', 'COLOR': 'COLOR', 'LINETYPE': 'LINETYPE', 'ELEVATION': 'ELEVATION', 'THICKNESS': 'THICKNESS', 'TEXT': 'TEXT', });
+lyr_KETRACO_LINES_20.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'LINE_NAME': 'LINE_NAME', 'Length': 'Length', 'STATUS': 'STATUS', 'VOLTAGE_1': 'VOLTAGE_1', 'COMM_DATE': 'COMM_DATE', });
+lyr_KETRACO_SUBSTATIONS_21.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'VOLTAGE': 'VOLTAGE', 'COMM_DATE_': 'COMM_DATE_', 'SUB_NAME': 'SUB_NAME', 'STATUS': 'STATUS', });
 lyr_SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit', 'altitudeMode': 'TextEdit', 'tessellate': 'TextEdit', 'extrude': 'TextEdit', 'visibility': 'TextEdit', 'drawOrder': 'TextEdit', 'icon': 'TextEdit', 'snippet': 'TextEdit', });
 lyr_SGRPHASE1TRANSMISSIONLINESECTION_2.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit', 'altitudeMode': 'TextEdit', 'tessellate': 'TextEdit', 'extrude': 'TextEdit', 'visibility': 'TextEdit', 'drawOrder': 'TextEdit', 'icon': 'TextEdit', 'snippet': 'TextEdit', });
 lyr_SGRPHASE1TemporaryPlaces_3.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit', 'altitudeMode': 'TextEdit', 'tessellate': 'TextEdit', 'extrude': 'TextEdit', 'visibility': 'TextEdit', 'drawOrder': 'TextEdit', 'icon': 'TextEdit', });
@@ -266,8 +290,10 @@ lyr_SGRPHASE1GE8309kmz_14.set('fieldImages', {'Name': 'TextEdit', 'description':
 lyr_SGRPHASE1GE4FABkmz_15.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit', 'altitudeMode': 'TextEdit', 'tessellate': 'TextEdit', 'extrude': 'TextEdit', 'visibility': 'TextEdit', 'drawOrder': 'TextEdit', 'icon': 'TextEdit', });
 lyr_SGRPHASE1GE4EB8kmz_16.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit', 'altitudeMode': 'TextEdit', 'tessellate': 'TextEdit', 'extrude': 'TextEdit', 'visibility': 'TextEdit', 'drawOrder': 'TextEdit', 'icon': 'TextEdit', });
 lyr_SGRPHASE1GE2A4Ekmz_17.set('fieldImages', {'Name': 'TextEdit', 'description': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit', 'altitudeMode': 'TextEdit', 'tessellate': 'TextEdit', 'extrude': 'TextEdit', 'visibility': 'TextEdit', 'drawOrder': 'TextEdit', 'icon': 'TextEdit', });
-lyr_KETRACO_LINES_18.set('fieldImages', {'OBJECTID': 'TextEdit', 'LINE_NAME': 'TextEdit', 'Length': 'TextEdit', 'STATUS': 'TextEdit', 'VOLTAGE_1': 'TextEdit', 'COMM_DATE': 'TextEdit', });
-lyr_KETRACO_SUBSTATIONS_19.set('fieldImages', {'OBJECTID': 'TextEdit', 'VOLTAGE': 'TextEdit', 'COMM_DATE_': 'TextEdit', 'SUB_NAME': 'TextEdit', 'STATUS': 'TextEdit', });
+lyr_220kvtransmission_MAX_18.set('fieldImages', {'ENTITY': 'TextEdit', 'HANDLE': 'TextEdit', 'LAYER': 'TextEdit', 'COLOR': 'TextEdit', 'LINETYPE': 'TextEdit', 'ELEVATION': 'TextEdit', 'THICKNESS': 'TextEdit', 'TEXT': 'TextEdit', });
+lyr_132kvtransmission_MAX_19.set('fieldImages', {'ENTITY': 'TextEdit', 'HANDLE': 'TextEdit', 'LAYER': 'TextEdit', 'COLOR': 'TextEdit', 'LINETYPE': 'TextEdit', 'ELEVATION': 'TextEdit', 'THICKNESS': 'TextEdit', 'TEXT': 'TextEdit', });
+lyr_KETRACO_LINES_20.set('fieldImages', {'OBJECTID': 'TextEdit', 'LINE_NAME': 'TextEdit', 'Length': 'TextEdit', 'STATUS': 'TextEdit', 'VOLTAGE_1': 'TextEdit', 'COMM_DATE': 'TextEdit', });
+lyr_KETRACO_SUBSTATIONS_21.set('fieldImages', {'OBJECTID': 'TextEdit', 'VOLTAGE': 'TextEdit', 'COMM_DATE_': 'TextEdit', 'SUB_NAME': 'TextEdit', 'STATUS': 'TextEdit', });
 lyr_SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', 'snippet': 'no label', });
 lyr_SGRPHASE1TRANSMISSIONLINESECTION_2.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', 'snippet': 'no label', });
 lyr_SGRPHASE1TemporaryPlaces_3.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
@@ -285,8 +311,10 @@ lyr_SGRPHASE1GE8309kmz_14.set('fieldLabels', {'Name': 'no label', 'description':
 lyr_SGRPHASE1GE4FABkmz_15.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
 lyr_SGRPHASE1GE4EB8kmz_16.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
 lyr_SGRPHASE1GE2A4Ekmz_17.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
-lyr_KETRACO_LINES_18.set('fieldLabels', {'OBJECTID': 'no label', 'LINE_NAME': 'no label', 'Length': 'no label', 'STATUS': 'no label', 'VOLTAGE_1': 'no label', 'COMM_DATE': 'no label', });
-lyr_KETRACO_SUBSTATIONS_19.set('fieldLabels', {'OBJECTID': 'no label', 'VOLTAGE': 'no label', 'COMM_DATE_': 'no label', 'SUB_NAME': 'no label', 'STATUS': 'no label', });
-lyr_KETRACO_SUBSTATIONS_19.on('precompose', function(evt) {
+lyr_220kvtransmission_MAX_18.set('fieldLabels', {'ENTITY': 'no label', 'HANDLE': 'no label', 'LAYER': 'no label', 'COLOR': 'no label', 'LINETYPE': 'no label', 'ELEVATION': 'no label', 'THICKNESS': 'no label', 'TEXT': 'no label', });
+lyr_132kvtransmission_MAX_19.set('fieldLabels', {'ENTITY': 'no label', 'HANDLE': 'no label', 'LAYER': 'no label', 'COLOR': 'no label', 'LINETYPE': 'no label', 'ELEVATION': 'no label', 'THICKNESS': 'no label', 'TEXT': 'no label', });
+lyr_KETRACO_LINES_20.set('fieldLabels', {'OBJECTID': 'no label', 'LINE_NAME': 'no label', 'Length': 'no label', 'STATUS': 'no label', 'VOLTAGE_1': 'no label', 'COMM_DATE': 'no label', });
+lyr_KETRACO_SUBSTATIONS_21.set('fieldLabels', {'OBJECTID': 'no label', 'VOLTAGE': 'no label', 'COMM_DATE_': 'no label', 'SUB_NAME': 'no label', 'STATUS': 'no label', });
+lyr_KETRACO_SUBSTATIONS_21.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
