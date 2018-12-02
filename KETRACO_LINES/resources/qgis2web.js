@@ -6,7 +6,7 @@ measureControl = function(opt_options) {
   var options = opt_options || {};
 
   var button = document.createElement('button');
-  button.className += ' fas fa-ruler ';
+  button.innerHTML = '<img src="resources/measure-control.png" />';
 
   var this_ = this;
   var handleMeasure = function(e) {
@@ -69,7 +69,7 @@ var map = new ol.Map({
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
-map.getView().fit([3291974.510077, -547462.441542, 4977719.476199, 638561.062263], map.getSize());
+map.getView().fit([3181947.007612, -988106.717648, 5835736.822816, 944338.887004], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
