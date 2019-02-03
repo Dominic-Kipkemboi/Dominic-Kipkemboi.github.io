@@ -1,30 +1,4 @@
 
-isTracking = false;
-geolocateControl = function(opt_options) {
-    var options = opt_options || {};
-    var button = document.createElement('button');
-    button.className += ' fa fa-map-marker';
-    var handleGeolocate = function() {
-        if (isTracking) {
-            map.removeLayer(geolocateOverlay);
-            isTracking = false;
-      } else if (geolocation.getTracking()) {
-            map.addLayer(geolocateOverlay);
-            map.getView().setCenter(geolocation.getPosition());
-            isTracking = true;
-      }
-    };
-    button.addEventListener('click', handleGeolocate, false);
-    button.addEventListener('touchstart', handleGeolocate, false);
-    var element = document.createElement('div');
-    element.className = 'geolocate ol-unselectable ol-control';
-    element.appendChild(button);
-    ol.control.Control.call(this, {
-        element: element,
-        target: options.target
-    });
-};
-ol.inherits(geolocateControl, ol.control.Control);
 
 var measuring = false;
 measureControl = function(opt_options) {
@@ -32,7 +6,7 @@ measureControl = function(opt_options) {
   var options = opt_options || {};
 
   var button = document.createElement('button');
-  button.className += ' fas fa-ruler ';
+  button.innerHTML = '<img src="resources/measure-control.png" />';
 
   var this_ = this;
   var handleMeasure = function(e) {
@@ -81,34 +55,21 @@ var expandedAttribution = new ol.control.Attribution({
 
 var map = new ol.Map({
     controls: ol.control.defaults({attribution:false}).extend([
-        expandedAttribution,new measureControl(),new geolocateControl()
+        expandedAttribution,new measureControl()
     ]),
     target: document.getElementById('map'),
     renderer: 'canvas',
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1
+         maxZoom: 28, minZoom: 6
     })
 });
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
-    var searchLayer = new ol.SearchLayer({
-      layer: lyr_KETRACO_LINES_23,
-      colName: 'LINE_NAME',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([3556339.043311, -512102.723786, 4964961.367509, 480837.040432], map.getSize());
+map.getView().fit([2926885.189592, -942001.556452, 5749016.047849, 1114230.587746], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -634,44 +595,6 @@ var formatLength = function(line) {
 
 addInteraction();
 
-
-      var geolocation = new ol.Geolocation({
-  projection: map.getView().getProjection()
-});
-
-
-var accuracyFeature = new ol.Feature();
-geolocation.on('change:accuracyGeometry', function() {
-  accuracyFeature.setGeometry(geolocation.getAccuracyGeometry());
-});
-
-var positionFeature = new ol.Feature();
-positionFeature.setStyle(new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 6,
-    fill: new ol.style.Fill({
-      color: '#3399CC'
-    }),
-    stroke: new ol.style.Stroke({
-      color: '#fff',
-      width: 2
-    })
-  })
-}));
-
-geolocation.on('change:position', function() {
-  var coordinates = geolocation.getPosition();
-  positionFeature.setGeometry(coordinates ?
-      new ol.geom.Point(coordinates) : null);
-});
-
-var geolocateOverlay = new ol.layer.Vector({
-  source: new ol.source.Vector({
-    features: [accuracyFeature, positionFeature]
-  })
-});
-
-geolocation.setTracking(true);
 
 
 
