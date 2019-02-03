@@ -7,11 +7,51 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/horsey.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
         <link rel="stylesheet" href="./resources/ol3-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
+<style>
+.search-layer {
+  top: 135px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 180px;
+}
+</style>
         <style>
         html, body {
             background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+
+        <style>
+        .geolocate {
+            top: 65px;
+            left: .5em;
+        }
+        .ol-touch .geolocate {
+            top: 80px;
         }
         </style>
 <style>
@@ -48,19 +88,17 @@
   border-top-color: #ffcc33;
 }
 .measure-control {
-  top: 65px;
+  top: 100px;
   left: .5em;
 }
 .ol-touch .measure-control {
-  top: 80px;
+  top: 130px;
 }
 </style>
         <style>
-        html, body, #map {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
+        #map {
+            width: 766px;
+            height: 540px;
         }
         </style>
         <title></title>
@@ -76,9 +114,12 @@
         <script src="resources/polyfills.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
+        <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
+        <script src="resources/horsey.min.js"></script>
+        <script src="resources/ol3-search-layer.min.js"></script>
         <script src="./resources/ol3-layerswitcher.js"></script>
-        <script src="layers/SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1.js"></script><script src="layers/SGRPHASE1TRANSMISSIONLINESECTION_2.js"></script><script src="layers/SGRPHASE1TemporaryPlaces_3.js"></script><script src="layers/SGRPHASE1COASTLINE_4.js"></script><script src="layers/SGRPHASE1GEF66Akmz_5.js"></script><script src="layers/SGRPHASE1GEDACFkmz_6.js"></script><script src="layers/SGRPHASE1GED3ABkmz_7.js"></script><script src="layers/SGRPHASE1GECA96kmz_8.js"></script><script src="layers/SGRPHASE1GEA99Ekmz_9.js"></script><script src="layers/SGRPHASE1GE8867kmz_10.js"></script><script src="layers/SGRPHASE1GE8309kmz_11.js"></script><script src="layers/SGRPHASE1GE4FABkmz_12.js"></script><script src="layers/SGRPHASE1GE4EB8kmz_13.js"></script><script src="layers/SGRPHASE1GE2A4Ekmz_14.js"></script><script src="layers/220kvtransmission_MAX_15.js"></script><script src="layers/132kvtransmission_MAX_16.js"></script><script src="layers/KETRACO_LINES_17.js"></script><script src="layers/KETRACO_SUBSTATIONS_18.js"></script>
-        <script src="styles/SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_1_style.js"></script><script src="styles/SGRPHASE1TRANSMISSIONLINESECTION_2_style.js"></script><script src="styles/SGRPHASE1TemporaryPlaces_3_style.js"></script><script src="styles/SGRPHASE1COASTLINE_4_style.js"></script><script src="styles/SGRPHASE1GEF66Akmz_5_style.js"></script><script src="styles/SGRPHASE1GEDACFkmz_6_style.js"></script><script src="styles/SGRPHASE1GED3ABkmz_7_style.js"></script><script src="styles/SGRPHASE1GECA96kmz_8_style.js"></script><script src="styles/SGRPHASE1GEA99Ekmz_9_style.js"></script><script src="styles/SGRPHASE1GE8867kmz_10_style.js"></script><script src="styles/SGRPHASE1GE8309kmz_11_style.js"></script><script src="styles/SGRPHASE1GE4FABkmz_12_style.js"></script><script src="styles/SGRPHASE1GE4EB8kmz_13_style.js"></script><script src="styles/SGRPHASE1GE2A4Ekmz_14_style.js"></script><script src="styles/220kvtransmission_MAX_15_style.js"></script><script src="styles/132kvtransmission_MAX_16_style.js"></script><script src="styles/KETRACO_LINES_17_style.js"></script><script src="styles/KETRACO_SUBSTATIONS_18_style.js"></script>
+        <script src="layers/County_1.js"></script><script src="layers/KENYA_2.js"></script><script src="layers/Tullow_Pipeline_3.js"></script><script src="layers/PowerInput_AGI_4.js"></script><script src="layers/220kvtransmission_MAX_5.js"></script><script src="layers/132kvtransmission_MAX_6.js"></script><script src="layers/SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_7.js"></script><script src="layers/SGRPHASE1TRANSMISSIONLINESECTION_8.js"></script><script src="layers/SGRPHASE1TemporaryPlaces_9.js"></script><script src="layers/SGRPHASE1PointFeatures_10.js"></script><script src="layers/SGRPHASE1HVMETERINGSUBSTATION_11.js"></script><script src="layers/SGRPHASE1COASTLINE_12.js"></script><script src="layers/SGRPHASE1GEF66Akmz_13.js"></script><script src="layers/SGRPHASE1GEDACFkmz_14.js"></script><script src="layers/SGRPHASE1GED3ABkmz_15.js"></script><script src="layers/SGRPHASE1GECA96kmz_16.js"></script><script src="layers/SGRPHASE1GEA99Ekmz_17.js"></script><script src="layers/SGRPHASE1GE8867kmz_18.js"></script><script src="layers/SGRPHASE1GE8309kmz_19.js"></script><script src="layers/SGRPHASE1GE4FABkmz_20.js"></script><script src="layers/SGRPHASE1GE4EB8kmz_21.js"></script><script src="layers/SGRPHASE1GE2A4Ekmz_22.js"></script><script src="layers/KETRACO_LINES_23.js"></script><script src="layers/KETRACO_SUBSTATIONS_38567_24.js"></script>
+        <script src="styles/County_1_style.js"></script><script src="styles/KENYA_2_style.js"></script><script src="styles/Tullow_Pipeline_3_style.js"></script><script src="styles/PowerInput_AGI_4_style.js"></script><script src="styles/220kvtransmission_MAX_5_style.js"></script><script src="styles/132kvtransmission_MAX_6_style.js"></script><script src="styles/SGRPHASE1TRANSMISSIONLINESACTUALPOSITION_7_style.js"></script><script src="styles/SGRPHASE1TRANSMISSIONLINESECTION_8_style.js"></script><script src="styles/SGRPHASE1TemporaryPlaces_9_style.js"></script><script src="styles/SGRPHASE1PointFeatures_10_style.js"></script><script src="styles/SGRPHASE1HVMETERINGSUBSTATION_11_style.js"></script><script src="styles/SGRPHASE1COASTLINE_12_style.js"></script><script src="styles/SGRPHASE1GEF66Akmz_13_style.js"></script><script src="styles/SGRPHASE1GEDACFkmz_14_style.js"></script><script src="styles/SGRPHASE1GED3ABkmz_15_style.js"></script><script src="styles/SGRPHASE1GECA96kmz_16_style.js"></script><script src="styles/SGRPHASE1GEA99Ekmz_17_style.js"></script><script src="styles/SGRPHASE1GE8867kmz_18_style.js"></script><script src="styles/SGRPHASE1GE8309kmz_19_style.js"></script><script src="styles/SGRPHASE1GE4FABkmz_20_style.js"></script><script src="styles/SGRPHASE1GE4EB8kmz_21_style.js"></script><script src="styles/SGRPHASE1GE2A4Ekmz_22_style.js"></script><script src="styles/KETRACO_LINES_23_style.js"></script><script src="styles/KETRACO_SUBSTATIONS_38567_24_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/qgis2web.js"></script>
         <script src="./resources/Autolinker.min.js"></script>
