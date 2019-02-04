@@ -263,21 +263,10 @@ jsonSource_KETRACO_LINES_23.addFeatures(features_KETRACO_LINES_23);var lyr_KETRA
                 source:jsonSource_KETRACO_LINES_23, 
                 style: style_KETRACO_LINES_23,
     title: 'KETRACO_LINES<br />\
-    <img src="styles/legend/KETRACO_LINES_23_0.png" /> 132kVCOMPLETED<br />\
-    <img src="styles/legend/KETRACO_LINES_23_1.png" /> 220kVCOMPLETED<br />\
-    <img src="styles/legend/KETRACO_LINES_23_2.png" /> 220kVPROPOSED<br />\
-    <img src="styles/legend/KETRACO_LINES_23_3.png" /> 400kVPROPOSED<br />\
-    <img src="styles/legend/KETRACO_LINES_23_4.png" /> 400kVCOMPLETED<br />\
-    <img src="styles/legend/KETRACO_LINES_23_5.png" /> 400kVUNDER CONSTRACTION<br />\
-    <img src="styles/legend/KETRACO_LINES_23_6.png" /> 132kVPROPOSED<br />\
-    <img src="styles/legend/KETRACO_LINES_23_7.png" /> 132kVUNDER CONSTRUCTION<br />\
-    <img src="styles/legend/KETRACO_LINES_23_8.png" /> 220kVUNDER CONSTRUCTION<br />\
-    <img src="styles/legend/KETRACO_LINES_23_9.png" /> 400kVUNDER CONSTRUCTION<br />\
-    <img src="styles/legend/KETRACO_LINES_23_10.png" /> 500HVDCUNDER CONSTRUCTION<br />\
-    <img src="styles/legend/KETRACO_LINES_23_11.png" /> 132kV<br />\
-    <img src="styles/legend/KETRACO_LINES_23_12.png" /> 220kV<br />\
-    <img src="styles/legend/KETRACO_LINES_23_13.png" /> 400kV<br />\
-    <img src="styles/legend/KETRACO_LINES_23_14.png" /> 500HVDC<br />'
+    <img src="styles/legend/KETRACO_LINES_23_0.png" /> 132kV<br />\
+    <img src="styles/legend/KETRACO_LINES_23_1.png" /> 220kV<br />\
+    <img src="styles/legend/KETRACO_LINES_23_2.png" /> 400kV<br />\
+    <img src="styles/legend/KETRACO_LINES_23_3.png" /> 500HVDC<br />'
         });var format_KETRACO_SUBSTATIONS_38567_24 = new ol.format.GeoJSON();
 var features_KETRACO_SUBSTATIONS_38567_24 = format_KETRACO_SUBSTATIONS_38567_24.readFeatures(json_KETRACO_SUBSTATIONS_38567_24, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
