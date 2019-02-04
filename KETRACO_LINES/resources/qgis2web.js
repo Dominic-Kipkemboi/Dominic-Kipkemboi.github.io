@@ -70,7 +70,7 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new ol.SearchLayer({
-      layer: lyr_KETRACO_LINES_23,
+      layer: lyr_KETRACO_LINES_24,
       colName: 'LINE_NAME',
       zoom: 10,
       collapsed: true,
